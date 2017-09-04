@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PennStateVendingMachineWebAPI", "PennStateVendingMachine\PennStateVendingMachineWebAPI.csproj", "{03823B5B-17F7-4186-AE7A-6452385851DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "100_DataAccess", "100_DataAccess", "{0551C3BE-AB5E-4CEC-AD09-68F9BBD6B667}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "200_Presentation", "200_Presentation", "{72158980-79C5-4F45-B045-1146016334D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "300_BusinessLogic", "300_BusinessLogic", "{5C2642E7-82C8-4C0A-9382-35EDC60F4018}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "310_WebAPI", "310_WebAPI", "{E7F98481-83CD-4BEE-8E3C-F49F0D414911}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{A6583766-0D83-4E68-87D2-8FDE5256D14E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "320_Controllers", "320_Controllers", "{96207EAC-3391-430C-91BC-422D5336572B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "330_Models", "330_Models", "{96880BEE-A9E0-4FE8-B290-1D9C60C2C521}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VendingMachineModels", "VendingMachineModels\VendingMachineModels.csproj", "{1344E143-00AD-432B-98EF-E4E71664EA1C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VendingMachineControllers", "VendingMachineControllers\VendingMachineControllers.csproj", "{057F94B4-B7BD-44C0-BA51-2025787715D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03823B5B-17F7-4186-AE7A-6452385851DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03823B5B-17F7-4186-AE7A-6452385851DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03823B5B-17F7-4186-AE7A-6452385851DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03823B5B-17F7-4186-AE7A-6452385851DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6583766-0D83-4E68-87D2-8FDE5256D14E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6583766-0D83-4E68-87D2-8FDE5256D14E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6583766-0D83-4E68-87D2-8FDE5256D14E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6583766-0D83-4E68-87D2-8FDE5256D14E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1344E143-00AD-432B-98EF-E4E71664EA1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1344E143-00AD-432B-98EF-E4E71664EA1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1344E143-00AD-432B-98EF-E4E71664EA1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1344E143-00AD-432B-98EF-E4E71664EA1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{057F94B4-B7BD-44C0-BA51-2025787715D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{057F94B4-B7BD-44C0-BA51-2025787715D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{057F94B4-B7BD-44C0-BA51-2025787715D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{057F94B4-B7BD-44C0-BA51-2025787715D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{03823B5B-17F7-4186-AE7A-6452385851DC} = {E7F98481-83CD-4BEE-8E3C-F49F0D414911}
+		{E7F98481-83CD-4BEE-8E3C-F49F0D414911} = {5C2642E7-82C8-4C0A-9382-35EDC60F4018}
+		{A6583766-0D83-4E68-87D2-8FDE5256D14E} = {0551C3BE-AB5E-4CEC-AD09-68F9BBD6B667}
+		{96207EAC-3391-430C-91BC-422D5336572B} = {5C2642E7-82C8-4C0A-9382-35EDC60F4018}
+		{96880BEE-A9E0-4FE8-B290-1D9C60C2C521} = {5C2642E7-82C8-4C0A-9382-35EDC60F4018}
+		{1344E143-00AD-432B-98EF-E4E71664EA1C} = {96880BEE-A9E0-4FE8-B290-1D9C60C2C521}
+		{057F94B4-B7BD-44C0-BA51-2025787715D1} = {96207EAC-3391-430C-91BC-422D5336572B}
+	EndGlobalSection
+EndGlobal

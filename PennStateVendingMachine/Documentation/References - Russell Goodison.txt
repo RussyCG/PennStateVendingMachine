@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/737151/how-to-get-the-list-of-properties-of-a-class
