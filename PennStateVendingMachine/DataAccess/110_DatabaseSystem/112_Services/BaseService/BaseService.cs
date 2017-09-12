@@ -4,6 +4,9 @@ using System.Data;
 using System.Text;
 using DataAccess._110_DatabaseSystem._113_Enums;
 using DataAccess._110_DatabaseSystem._114_Interfaces.Services.BaseService;
+using System.IO;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace DataAccess._110_DatabaseSystem._112_Services.BaseService
 {
@@ -14,6 +17,27 @@ namespace DataAccess._110_DatabaseSystem._112_Services.BaseService
     {
         #region Fields
 
+        /// <summary>
+        /// Dictates the command executed on the database
+        /// </summary>
+        SqlCommand command;
+        /// <summary>
+        /// Sets the connection to the database
+        /// </summary>
+        SqlConnection connection;
+        /// <summary>
+        /// Used to get data from the dataset
+        /// </summary>
+        SqlDataAdapter adapter;
+        /// <summary>
+        /// Used to store the result from the database
+        /// </summary>
+        DataTable dataTable;
+        /// <summary>
+        /// Sets the connection string to be used to connect to the database
+        /// </summary>
+        string connectionString;
+
         #endregion
 
         #region Constructors
@@ -21,6 +45,15 @@ namespace DataAccess._110_DatabaseSystem._112_Services.BaseService
         public BaseService()
         {
 
+        }
+
+        /// <summary>
+        /// Sets the connection with the supplied ConnectionStringName
+        /// </summary>
+        /// <param name="ConnectionStringName">Name of the connection string to use from the .config file</param>
+        public BaseService(string ConnectionStringName)
+        {
+            connectionString = ConfigurationManager.ConnectionStrings[ConnectionStringName].ConnectionString.ToString();
         }
 
         #endregion
@@ -66,7 +99,7 @@ namespace DataAccess._110_DatabaseSystem._112_Services.BaseService
         {
             throw new NotImplementedException();
         }
-        
+
         #endregion
 
         #endregion
