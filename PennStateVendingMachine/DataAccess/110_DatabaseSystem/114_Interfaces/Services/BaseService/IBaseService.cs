@@ -42,7 +42,7 @@ namespace DataAccess._110_DatabaseSystem._114_Interfaces.Services.BaseService
         /// <param name="Parameters">Parameters that need to be updated</param>
         /// <param name="ObjectID">ObjectID that needs to be updated</param>
         /// <returns>If the data was successfully updated</returns>
-        bool Update(UpdateableTables TableToUpdateFrom, Dictionary<string, object> Parameters, string ObjectID);
+        bool Update(UpdateableTables TableToUpdateFrom, Dictionary<string, object> Parameters);
 
         /// <summary>
         /// Method to delete data from a table
@@ -50,6 +50,6 @@ namespace DataAccess._110_DatabaseSystem._114_Interfaces.Services.BaseService
         /// <param name="TableToDeleteFrom">Table to delete the data from</param>
         /// <param name="ID">Record ID that needs to be deleted</param>
         /// <returns>If the the data was successfully removed from the table</returns>
-        bool Delete(DeleteableTables TableToDeleteFrom, string ID);
+        bool Delete(DeleteableTables TableToDeleteFrom, Dictionary<string, object> IDwithName);
     }
 }

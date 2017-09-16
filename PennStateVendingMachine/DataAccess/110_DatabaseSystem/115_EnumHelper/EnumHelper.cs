@@ -8,14 +8,14 @@ namespace DataAccess._110_DatabaseSystem._115_EnumHelper
     /// <summary>
     /// Class to convert enum list to string of view and stored procedure name
     /// </summary>
-    class EnumHelper
+    static class EnumHelper
     {
         /// <summary>
         /// Method to convert InsertableTables Enum to the string of the stored procedure name
         /// </summary>
         /// <param name="TableToInsertTo">Enum value selected</param>
         /// <returns>String name of Stored Procedure in database</returns>
-        internal string GetStoredProcedureName(InsertableTables TableToInsertTo)
+        internal static string GetStoredProcedureName(InsertableTables TableToInsertTo)
         {
             string temp = "sp_Insert";
 
@@ -29,7 +29,7 @@ namespace DataAccess._110_DatabaseSystem._115_EnumHelper
         /// </summary>
         /// <param name="TableToUpdateTo">Enum Value selected</param>
         /// <returns>String name of Stored Procedure in Database</returns>
-        internal string GetStoredProcedureName(UpdateableTables TableToUpdateTo)
+        internal static string GetStoredProcedureName(UpdateableTables TableToUpdateTo)
         {
             string temp = "sp_Update";
 
@@ -43,7 +43,7 @@ namespace DataAccess._110_DatabaseSystem._115_EnumHelper
         /// </summary>
         /// <param name="TableToDeleteFrom">Enum Value selected</param>
         /// <returns>String name of the Stored Procedure in database</returns>
-        internal string GetStoredProcedureName(DeleteableTables TableToDeleteFrom)
+        internal static string GetStoredProcedureName(DeleteableTables TableToDeleteFrom)
         {
             string temp = "sp_Delete";
 
@@ -57,7 +57,7 @@ namespace DataAccess._110_DatabaseSystem._115_EnumHelper
         /// </summary>
         /// <param name="TableToSelectFrom">Enum Value selected</param>
         /// <returns>String name of the view in Database</returns>
-        internal string GetViewName(SelectableViews TableToSelectFrom)
+        internal static string GetViewName(SelectableViews TableToSelectFrom)
         {
             string temp = "view_";
 
@@ -71,7 +71,7 @@ namespace DataAccess._110_DatabaseSystem._115_EnumHelper
         /// </summary>
         /// <param name="TableToSelectFrom">Enum Value selected</param>
         /// <returns>String name of the view in database</returns>
-        internal string GetViewName(SelectableViewsWithParameters TableToSelectFrom)
+        internal static string GetViewName(SelectableViewsWithParameters TableToSelectFrom)
         {
             string temp = "view_";
 

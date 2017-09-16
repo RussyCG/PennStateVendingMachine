@@ -49,6 +49,7 @@
     <Compile Include="110_DatabaseSystem\114_Interfaces\Services\BaseService\IBaseService.cs" />
     <Compile Include="110_DatabaseSystem\114_Interfaces\Services\IService.cs" />
     <Compile Include="110_DatabaseSystem\115_EnumHelper\EnumHelper.cs" />
+    <Compile Include="110_DatabaseSystem\116_Common\Common.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
