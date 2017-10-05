@@ -41,8 +41,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="110_DatabaseSystem\111_Models\BaseModel\BaseModel.cs" />
+    <Compile Include="110_DatabaseSystem\111_Models\Address.cs" />
+    <Compile Include="110_DatabaseSystem\111_Models\Base\BaseModel.cs" />
+    <Compile Include="110_DatabaseSystem\111_Models\Branch.cs" />
+    <Compile Include="110_DatabaseSystem\111_Models\City.cs" />
+    <Compile Include="110_DatabaseSystem\111_Models\Company.cs" />
+    <Compile Include="110_DatabaseSystem\111_Models\Compartment.cs" />
+    <Compile Include="110_DatabaseSystem\111_Models\CompartmentType.cs" />
+    <Compile Include="110_DatabaseSystem\111_Models\Country.cs" />
+    <Compile Include="110_DatabaseSystem\111_Models\Product.cs" />
+    <Compile Include="110_DatabaseSystem\111_Models\ProductType.cs" />
+    <Compile Include="110_DatabaseSystem\111_Models\Profile.cs" />
+    <Compile Include="110_DatabaseSystem\111_Models\Province.cs" />
+    <Compile Include="110_DatabaseSystem\111_Models\Role.cs" />
+    <Compile Include="110_DatabaseSystem\111_Models\Suburb.cs" />
+    <Compile Include="110_DatabaseSystem\111_Models\User.cs" />
+    <Compile Include="110_DatabaseSystem\111_Models\UserLog.cs" />
+    <Compile Include="110_DatabaseSystem\111_Models\VendingMachine.cs" />
+    <Compile Include="110_DatabaseSystem\111_Models\VendingMachineLog.cs" />
+    <Compile Include="110_DatabaseSystem\111_Models\VendingMachineProduct.cs" />
+    <Compile Include="110_DatabaseSystem\111_Models\VendingMachinePurchase.cs" />
     <Compile Include="110_DatabaseSystem\112_Services\BaseService\BaseService.cs" />
+    <Compile Include="110_DatabaseSystem\112_Services\ProductService.cs" />
     <Compile Include="110_DatabaseSystem\113_Enums\DatabaseTableEnums.cs" />
     <Compile Include="110_DatabaseSystem\114_Interfaces\Models\BaseModel\IBaseModel.cs" />
     <Compile Include="110_DatabaseSystem\114_Interfaces\Models\IModel.cs" />

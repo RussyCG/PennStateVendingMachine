@@ -85,6 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -101,8 +102,17 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VendingMachineControllers\VendingMachineControllers.csproj">
+      <Project>{057f94b4-b7bd-44c0-ba51-2025787715d1}</Project>
+      <Name>VendingMachineControllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VendingMachineModels\VendingMachineModels.csproj">
+      <Project>{1344e143-00ad-432b-98ef-e4e71664ea1c}</Project>
+      <Name>VendingMachineModels</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

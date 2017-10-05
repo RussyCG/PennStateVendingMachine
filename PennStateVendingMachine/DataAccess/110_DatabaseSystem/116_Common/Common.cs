@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DataAccess._110_DatabaseSystem._116_Common
 {
-    static class Common
+    internal static class Common
     {
-        
+        internal const string ConnectionStringName = "PennStateVendingMachineLocal";
     }
 }

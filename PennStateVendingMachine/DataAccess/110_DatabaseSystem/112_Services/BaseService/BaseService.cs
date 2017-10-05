@@ -14,7 +14,7 @@ namespace DataAccess._110_DatabaseSystem._112_Services.BaseService
     /// <summary>
     /// Base class that all Database System Services must use
     /// </summary>
-    class BaseService : IBaseService, IDisposable
+    public class BaseService : IBaseService, IDisposable
     {
         #region Fields
 
@@ -43,10 +43,10 @@ namespace DataAccess._110_DatabaseSystem._112_Services.BaseService
 
         #region Constructors
 
-        //public BaseService()
-        //{
+        public BaseService()
+        {
 
-        //}
+        }
 
         /// <summary>
         /// Sets the connection with the supplied ConnectionStringName
@@ -60,6 +60,12 @@ namespace DataAccess._110_DatabaseSystem._112_Services.BaseService
         #endregion
 
         #region Properties
+
+        internal SelectableViews selectView;
+        internal SelectableViewsWithParameters selectViewWithParameters;
+        internal InsertableTables insertTable;
+        internal DeleteableTables deleteTable;
+        internal UpdateableTables updateTable;
 
         #endregion
 

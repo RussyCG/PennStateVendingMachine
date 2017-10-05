@@ -10,36 +10,36 @@ namespace DataAccess._110_DatabaseSystem._113_Enums
     /// <summary>
     /// Lists what tables may have data inserted into them by the application
     /// </summary>
-    enum InsertableTables
+    internal enum InsertableTables
     {
-
+        Product
     }
 
     /// <summary>
     /// Lists what tables may have data be deleted from them
     /// </summary>
-    enum DeleteableTables
+    internal enum DeleteableTables
     {
-
+        Product
     }
 
     /// <summary>
     /// Lists what tables may have data that can be updated at some point
     /// </summary>
-    enum UpdateableTables
+    internal enum UpdateableTables
     {
-
+        Product
     }
 
     /// <summary>
     /// Lists the views that can be selected by the application
     /// </summary>
-    enum SelectableViews
+    internal enum SelectableViews
     {
-
+        Product
     }
 
-    enum SelectableViewsWithParameters
+    internal enum SelectableViewsWithParameters
     {
 
     }
