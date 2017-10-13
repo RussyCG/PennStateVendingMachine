@@ -48,10 +48,6 @@
       <Project>{8d532665-f22f-44c5-ad8d-767fbde58cbc}</Project>
       <Name>DataAccess</Name>
     </ProjectReference>
-    <ProjectReference Include="..\VendingMachineModels\VendingMachineModels.csproj">
-      <Project>{1344e143-00ad-432b-98ef-e4e71664ea1c}</Project>
-      <Name>VendingMachineModels</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
