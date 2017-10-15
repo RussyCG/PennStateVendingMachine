@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace VendingMachineModels
 {
-    public class Compartment
+    public class CompartmentDTO
     {
         private int iD;
         private string description;
         private int capacity;
-        private CompartmentType compartmentType;
+        private CompartmentTypeDTO compartmentType;
 
-        public Compartment()
+        public CompartmentDTO()
         {
 
         }
 
-        public Compartment(int IDParam, string DescriptionParam, int CapacityParam, CompartmentType CompartmentTypeParam)
+        public CompartmentDTO(int IDParam, string DescriptionParam, int CapacityParam, CompartmentTypeDTO CompartmentTypeParam)
         {
             this.ID = IDParam;
             this.Description = DescriptionParam;
@@ -26,7 +26,7 @@ namespace VendingMachineModels
             this.CompartmentType = CompartmentTypeParam;
         }
 
-        public CompartmentType CompartmentType
+        public CompartmentTypeDTO CompartmentType
         {
             get { return compartmentType; }
             set { compartmentType = value; }

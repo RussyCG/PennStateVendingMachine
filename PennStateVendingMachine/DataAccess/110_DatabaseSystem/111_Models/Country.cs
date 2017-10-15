@@ -8,6 +8,8 @@ namespace DataAccess._110_DatabaseSystem._111_Models
 {
     public class Country
     {
+        public static string TableName = "Country";
+
         private int iD;
         private string name;
 

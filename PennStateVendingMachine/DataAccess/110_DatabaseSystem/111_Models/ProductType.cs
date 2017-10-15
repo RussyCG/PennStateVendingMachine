@@ -9,6 +9,8 @@ namespace DataAccess._110_DatabaseSystem._111_Models
 {
     public class ProductType : IModel
     {
+        public static string TableName = "ProductType";
+
         private int iD;
         private string description;
 

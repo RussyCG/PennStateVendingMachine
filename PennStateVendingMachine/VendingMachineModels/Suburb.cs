@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace VendingMachineModels
 {
-    public class Suburb
+    public class SuburbDTO
     {
         private int iD;
         private string name;
         private string postalCode;
 
-        public Suburb()
+        public SuburbDTO()
         {
 
         }
 
-        public Suburb(int IDParam, string NameParam, string PostalCodeParam)
+        public SuburbDTO(int IDParam, string NameParam, string PostalCodeParam)
         {
             this.ID = IDParam;
             this.Name = NameParam;

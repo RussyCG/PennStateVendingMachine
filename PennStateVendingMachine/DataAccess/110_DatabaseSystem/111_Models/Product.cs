@@ -6,18 +6,22 @@ using System.Threading.Tasks;
 
 namespace DataAccess._110_DatabaseSystem._111_Models
 {
-    public class Product
+    public class Product : Base.BaseModel
     {
+        public static string TableName = "Product";
+
         private int iD;
         private string name;
         private ProductType productType;
 
         public Product()
+            :base()
         {
 
         }
 
         public Product(int IDParam, string NameParam, ProductType ProductTypeParam)
+            : base()
         {
             this.ID = IDParam;
             this.Name = NameParam;

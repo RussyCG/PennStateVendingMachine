@@ -70,6 +70,7 @@
     <Compile Include="110_DatabaseSystem\114_Interfaces\Services\IService.cs" />
     <Compile Include="110_DatabaseSystem\115_EnumHelper\EnumHelper.cs" />
     <Compile Include="110_DatabaseSystem\116_Common\Common.cs" />
+    <Compile Include="110_DatabaseSystem\117_Conversion\Conversion.cs" />
     <Compile Include="120_FileSystem\FileHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

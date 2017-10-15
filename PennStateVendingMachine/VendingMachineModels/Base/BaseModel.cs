@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace VendingMachineModels
+namespace VendingMachineModels.Base
 {
     /// <summary>
     /// Base Model for the models. Implements the GetParameters function
@@ -22,11 +22,6 @@ namespace VendingMachineModels
                 temp.Add("@" + property.Name, property.GetValue(ParameteredObject, null));
             }
             return temp;
-        }
-
-        Dictionary<string, object> IBaseModel.GetParameters(object ParameteredObject)
-        {
-            throw new NotImplementedException();
         }
     }
 }

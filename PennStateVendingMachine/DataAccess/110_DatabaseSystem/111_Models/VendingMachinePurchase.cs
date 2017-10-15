@@ -8,10 +8,12 @@ namespace DataAccess._110_DatabaseSystem._111_Models
 {
     public class VendingMachinePurchase
     {
+        public static string TableName = "VendingMachinePurchase";
+
         private int iD;
         private VendingMachine vendingMachine;
         private Product product;
-        private int cost;
+        private double cost;
         private int quantity;
         private DateTime dateTimePurchase;
 
@@ -20,7 +22,7 @@ namespace DataAccess._110_DatabaseSystem._111_Models
 
         }
 
-        public VendingMachinePurchase(int IDParam, VendingMachine VendingMachineParam, Product ProductParam, int CostParam, int QuantityParam, DateTime DateTimePurchasedParam)
+        public VendingMachinePurchase(int IDParam, VendingMachine VendingMachineParam, Product ProductParam, double CostParam, int QuantityParam, DateTime DateTimePurchasedParam)
         {
             this.ID = IDParam;
             this.VendingMachine = VendingMachineParam;
@@ -42,7 +44,7 @@ namespace DataAccess._110_DatabaseSystem._111_Models
             set { quantity = value; }
         }
 
-        public int Cost
+        public double Cost
         {
             get { return cost; }
             set { cost = value; }

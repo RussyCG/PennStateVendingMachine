@@ -40,7 +40,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProductController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{8d532665-f22f-44c5-ad8d-767fbde58cbc}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTOConversion\DTOConversion.csproj">
+      <Project>{1b39960d-54fa-4158-ae99-58158467c2f7}</Project>
+      <Name>DTOConversion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VendingMachineModels\VendingMachineModels.csproj">
+      <Project>{98bfa32f-5f42-4f72-aaee-40b3a9be2b3e}</Project>
+      <Name>VendingMachineModels</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

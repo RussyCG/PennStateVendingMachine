@@ -8,6 +8,8 @@ namespace DataAccess._110_DatabaseSystem._111_Models
 {
     public class Role : Base.BaseModel
     {
+        public static string TableName = "Role";
+
         private int iD;
         private string name;
 

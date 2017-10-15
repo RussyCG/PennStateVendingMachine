@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace VendingMachineModels
 {
-    public class UserLog
+    public class UserLogDTO
     {
         private int iD;
-        private User user;
+        private UserDTO user;
         private DateTime dateTimeLogged;
         private string ipAddress;
 
-        public UserLog()
+        public UserLogDTO()
         {
 
         }
 
-        public UserLog(int IDParam, User UserParam, DateTime DateTimeLoggedParam, string IPAddressParam)
+        public UserLogDTO(int IDParam, UserDTO UserParam, DateTime DateTimeLoggedParam, string IPAddressParam)
         {
             this.ID = IDParam;
             this.User = UserParam;
@@ -38,7 +38,7 @@ namespace VendingMachineModels
             set { dateTimeLogged = value; }
         }
 
-        public User User
+        public UserDTO User
         {
             get { return user; }
             set { user = value; }

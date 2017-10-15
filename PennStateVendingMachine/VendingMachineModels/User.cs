@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VendingMachineModels
 {
-    public class User
+    public class UserDTO
     {
         private int iD;
         private string firstName;
@@ -15,14 +15,14 @@ namespace VendingMachineModels
         private string password;
         private string emailAddress;
         private string contactNumber;
-        private Profile profile;
+        private ProfileDTO profile;
 
-        public User()
+        public UserDTO()
         {
 
         }
 
-        public User(int IDParam, string FirstNameParam, string LastNameParam, string UsernameParam, string PasswordParam, string EmailAddressParam, string ContactNumberParam, Profile ProfileParam)
+        public UserDTO(int IDParam, string FirstNameParam, string LastNameParam, string UsernameParam, string PasswordParam, string EmailAddressParam, string ContactNumberParam, ProfileDTO ProfileParam)
         {
             this.ID = IDParam;
             this.FirstName = FirstNameParam;
@@ -34,7 +34,7 @@ namespace VendingMachineModels
             this.Profile = ProfileParam;
         }
 
-        public Profile Profile
+        public ProfileDTO Profile
         {
             get { return profile; }
             set { profile = value; }

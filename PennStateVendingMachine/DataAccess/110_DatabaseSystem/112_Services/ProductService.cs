@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using DataAccess._110_DatabaseSystem._114_Interfaces.Services;
 using DataAccess._110_DatabaseSystem._113_Enums;
 using DataAccess._110_DatabaseSystem._111_Models;
+using DataAccess._110_DatabaseSystem._117_Conversion;
 
 namespace DataAccess._110_DatabaseSystem._112_Services
 {
@@ -14,7 +15,7 @@ namespace DataAccess._110_DatabaseSystem._112_Services
     {
         public ProductService() : base()
         {
-            ProductService
+            
         }
         
         private void InitializeComponents()
@@ -28,22 +29,33 @@ namespace DataAccess._110_DatabaseSystem._112_Services
 
         public bool Delete(Product ProductToDelete)
         {
-            return base.Delete(deleteTable, ProductToDelete.GetIDParameters());
+            throw new NotImplementedException();
+            //return base.Delete(deleteTable, ProductToDelete.GetIDParameters(ProductToDelete));
         }
 
         public bool Insert(Product ProductToInsert)
         {
-            return base.Insert(insertTable, ProductToInsert.GetParameters());
+            return base.Insert(insertTable, ProductToInsert.GetParameters(ProductToInsert));
         }
 
         public Product Select()
         {
-            return base.Select(selectView);
+            DataTable dt = base.Select(selectView);
+
+            if (dt.Rows.Count <= 0 || dt.Rows == null)
+                return null;
+
+            return dt.Rows[0].ToProduct();
+        }
+
+        public List<Product> SelectAll()
+        {
+            return base.Select(selectView).ToProducts();
         }
 
         public bool Update(Product ProductToUpdate)
         {
-            return base.Update(updateTable, ProductToUpdate.GetParameters());
+            return base.Update(updateTable, ProductToUpdate.GetParameters(ProductToUpdate));
         }
     }
 }

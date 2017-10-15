@@ -1,5 +1,4 @@
-﻿using DataAccess._110_DatabaseSystem._114_Interfaces.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace VendingMachineModels
 {
-    public class ProductType : IModel
+    public class ProductTypeDTO
     {
         private int iD;
         private string description;
 
-        public ProductType()
+        public ProductTypeDTO()
         {
 
         }
 
-        public ProductType(int IDParam, string DescriptionParam)
+        public ProductTypeDTO(int IDParam, string DescriptionParam)
         {
             this.ID = IDParam;
             this.Descripton = DescriptionParam;

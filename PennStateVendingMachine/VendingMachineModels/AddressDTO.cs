@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace VendingMachineModels
 {
-    public class Address
+    public class AddressDTO
     {
         private int iD;
         private string streetAddress;
-        private Suburb suburb;
-        private City city;
-        private Province province;
-        private Country country;
+        private SuburbDTO suburb;
+        private CityDTO city;
+        private ProvinceDTO province;
+        private CountryDTO country;
 
-        public Address()
+        public AddressDTO()
         {
 
         }
 
-        public Address(int IDParam, string StreetAddressParam, Suburb SuburbParam, City CityParam, Province ProvinceParam, Country CountryParam)
+        public AddressDTO(int IDParam, string StreetAddressParam, SuburbDTO SuburbParam, CityDTO CityParam, ProvinceDTO ProvinceParam, CountryDTO CountryParam)
         {
             this.ID = IDParam;
             this.StreetAddress = StreetAddressParam;
@@ -30,25 +30,25 @@ namespace VendingMachineModels
             this.Country = CountryParam;
         }
 
-        public Country Country
+        public CountryDTO Country
         {
             get { return country; }
             set { country = value; }
         }
 
-        public Province Province
+        public ProvinceDTO Province
         {
             get { return province; }
             set { province = value; }
         }
 
-        public City City
+        public CityDTO City
         {
             get { return city; }
             set { city = value; }
         }
 
-        public Suburb Suburb
+        public SuburbDTO Suburb
         {
             get { return suburb; }
             set { suburb = value; }

@@ -8,21 +8,24 @@ namespace DataAccess._110_DatabaseSystem._111_Models
 {
     public class VendingMachineLog
     {
+        public static string TableName = "VendingMachine";
+
         private int iD;
         private VendingMachine vendingMachine;
         private DateTime dateTimeLogged;
-        private bool successful;
+        //private bool successful;
 
         public VendingMachineLog()
         {
 
         }
 
-        public VendingMachineLog(int IDParam, DateTime DateTimeLoggedParam, bool SuccessfulParam)
+        //, bool SuccessfulParam
+        public VendingMachineLog(int IDParam, DateTime DateTimeLoggedParam)
         {
             this.ID = IDParam;
             this.DateTimeLogged = DateTimeLoggedParam;
-            this.Successful = SuccessfulParam;
+            //this.Successful = SuccessfulParam;
         }
 
         public VendingMachine VendingMachine
@@ -31,11 +34,11 @@ namespace DataAccess._110_DatabaseSystem._111_Models
             set { vendingMachine = value; }
         }
 
-        public bool Successful
-        {
-            get { return successful; }
-            set { successful = value; }
-        }
+        //public bool Successful
+        //{
+        //    get { return successful; }
+        //    set { successful = value; }
+        //}
 
         public DateTime DateTimeLogged
         {

@@ -8,6 +8,8 @@ namespace DataAccess._110_DatabaseSystem._111_Models
 {
     public class City
     {
+        public static string TableName = "City";
+
         private int iD;
         private string name;
 

@@ -15,7 +15,7 @@ namespace DataAccess._110_DatabaseSystem._111_Models.Base
         /// </summary>
         /// <param name="ParameteredObject">Object to get the parameters from</param>
         /// <returns>Parameters for the sql statement</returns>
-        internal virtual Dictionary<string, object> GetParameters(object ParameteredObject)
+        public virtual Dictionary<string, object> GetParameters(object ParameteredObject)
         {
             Dictionary<string, object> temp = new Dictionary<string, object>();
             foreach (var property in ParameteredObject.GetType().GetProperties())

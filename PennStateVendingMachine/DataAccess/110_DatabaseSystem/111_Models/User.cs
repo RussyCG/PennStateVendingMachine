@@ -8,6 +8,8 @@ namespace DataAccess._110_DatabaseSystem._111_Models
 {
     public class User
     {
+        public static string TableName = "User";
+
         private int iD;
         private string firstName;
         private string lastName;

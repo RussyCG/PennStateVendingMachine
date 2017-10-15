@@ -6,25 +6,25 @@ using System.Threading.Tasks;
 
 namespace VendingMachineModels
 {
-    public class Profile
+    public class ProfileDTO
     {
         private int iD;
         private string name;
-        private List<Role> roles;
+        private List<RoleDTO> roles;
         
-        public Profile()
+        public ProfileDTO()
         {
 
         }
 
-        public Profile(int IDParam, string NameParam, List<Role> RolesParam)
+        public ProfileDTO(int IDParam, string NameParam, List<RoleDTO> RolesParam)
         {
             this.ID = IDParam;
             this.Name = NameParam;
             this.Roles = RolesParam;
         }
 
-        public List<Role> Roles
+        public List<RoleDTO> Roles
         {
             get { return roles; }
             set { roles = value; }

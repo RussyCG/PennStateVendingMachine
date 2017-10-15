@@ -8,6 +8,8 @@ namespace DataAccess._110_DatabaseSystem._111_Models
 {
     public class Compartment
     {
+        public static string TableName = "Compartment";
+
         private int iD;
         private string description;
         private int capacity;

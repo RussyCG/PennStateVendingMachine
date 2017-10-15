@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace VendingMachineModels
 {
-    public class VendingMachinePurchase
+    public class VendingMachinePurchaseDTO
     {
         private int iD;
-        private VendingMachine vendingMachine;
-        private Product product;
-        private int cost;
+        private VendingMachineDTO vendingMachine;
+        private ProductDTO product;
+        private double cost;
         private int quantity;
         private DateTime dateTimePurchase;
 
-        public VendingMachinePurchase()
+        public VendingMachinePurchaseDTO()
         {
 
         }
 
-        public VendingMachinePurchase(int IDParam, VendingMachine VendingMachineParam, Product ProductParam, int CostParam, int QuantityParam, DateTime DateTimePurchasedParam)
+        public VendingMachinePurchaseDTO(int IDParam, VendingMachineDTO VendingMachineParam, ProductDTO ProductParam, double CostParam, int QuantityParam, DateTime DateTimePurchasedParam)
         {
             this.ID = IDParam;
             this.VendingMachine = VendingMachineParam;
@@ -42,19 +42,19 @@ namespace VendingMachineModels
             set { quantity = value; }
         }
 
-        public int Cost
+        public double Cost
         {
             get { return cost; }
             set { cost = value; }
         }
 
-        public Product Product
+        public ProductDTO Product
         {
             get { return product; }
             set { product = value; }
         }
 
-        public VendingMachine VendingMachine
+        public VendingMachineDTO VendingMachine
         {
             get { return vendingMachine; }
             set { vendingMachine = value; }

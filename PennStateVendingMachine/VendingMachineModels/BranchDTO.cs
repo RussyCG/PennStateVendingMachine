@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace VendingMachineModels
 {
-    public class Branch
+    public class BranchDTO
     {
         private int iD;
         private string name;
-        private Company company;
-        private Address address;
-        private List<User> users;
+        private CompanyDTO company;
+        private AddressDTO address;
+        private List<UserDTO> users;
         
-        public Branch()
+        public BranchDTO()
         {
 
         }
 
-        public Branch(int IDParam, string NameParam, Company CompanyParam, Address AddressParam, List<User> UsersParam)
+        public BranchDTO(int IDParam, string NameParam, CompanyDTO CompanyParam, AddressDTO AddressParam, List<UserDTO> UsersParam)
         {
             this.ID = IDParam;
             this.Name = NameParam;
@@ -28,19 +28,19 @@ namespace VendingMachineModels
             this.Users = UsersParam;
         }
 
-        public List<User> Users
+        public List<UserDTO> Users
         {
             get { return users; }
             set { users = value; }
         }
 
-        public Address Address
+        public AddressDTO Address
         {
             get { return address; }
             set { address = value; }
         }
 
-        public Company Company
+        public CompanyDTO Company
         {
             get { return company; }
             set { company = value; }

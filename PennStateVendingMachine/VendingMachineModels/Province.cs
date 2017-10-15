@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace VendingMachineModels
 {
-    public class Province
+    public class ProvinceDTO
     {
         private int iD;
         private string name;
 
-        public Province()
+        public ProvinceDTO()
         {
 
         }
 
-        public Province(int IDParam, string NameParam)
+        public ProvinceDTO(int IDParam, string NameParam)
         {
             this.ID = IDParam;
             this.Name = NameParam;

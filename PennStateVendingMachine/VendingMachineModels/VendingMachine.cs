@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace VendingMachineModels
 {
-    public class VendingMachine
+    public class VendingMachineDTO
     {
         private int iD;
         private string serialNumber;
-        private Branch branch;
-        private Address address;
+        private BranchDTO branch;
+        private AddressDTO address;
 
-        public VendingMachine()
+        public VendingMachineDTO()
         {
 
         }
 
-        public VendingMachine(int IDParam, string SerialNumberParam, Branch BranchParam, Address AddressParam)
+        public VendingMachineDTO(int IDParam, string SerialNumberParam, BranchDTO BranchParam, AddressDTO AddressParam)
         {
             this.ID = IDParam;
             this.SerialNumber = SerialNumberParam;
@@ -26,13 +26,13 @@ namespace VendingMachineModels
             this.Address = AddressParam;
         }
 
-        public Address Address
+        public AddressDTO Address
         {
             get { return address; }
             set { address = value; }
         }
 
-        public Branch Branch
+        public BranchDTO Branch
         {
             get { return branch; }
             set { branch = value; }

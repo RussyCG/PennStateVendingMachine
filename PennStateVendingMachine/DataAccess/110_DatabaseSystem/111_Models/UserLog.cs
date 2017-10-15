@@ -8,6 +8,8 @@ namespace DataAccess._110_DatabaseSystem._111_Models
 {
     public class UserLog
     {
+        public static string TableName = "UserLog";
+
         private int iD;
         private User user;
         private DateTime dateTimeLogged;

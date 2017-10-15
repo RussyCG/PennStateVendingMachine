@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace VendingMachineModels
 {
-    public class Company
+    public class CompanyDTO
     {
         private int iD;
         private string name;
 
-        public Company()
+        public CompanyDTO()
         {
 
         }
 
-        public Company(int IDParam, string NameParam)
+        public CompanyDTO(int IDParam, string NameParam)
         {
             this.ID = IDParam;
             this.Name = NameParam;

@@ -8,10 +8,12 @@ namespace DataAccess._110_DatabaseSystem._111_Models
 {
     public class VendingMachineProduct
     {
+        public static string TableName = "VendingMachineProduct";
+
         private VendingMachine vendingMachine;
         private Compartment compartment;
         private Product product;
-        private int cost;
+        private double cost;
         private int stockOnHand;
 
         public VendingMachineProduct()
@@ -19,7 +21,7 @@ namespace DataAccess._110_DatabaseSystem._111_Models
 
         }
 
-        public VendingMachineProduct(VendingMachine VendingMachineParam, Compartment CompartmentParam, Product ProductParam, int CostParam, int StockOnHandParam)
+        public VendingMachineProduct(VendingMachine VendingMachineParam, Compartment CompartmentParam, Product ProductParam, double CostParam, int StockOnHandParam)
         {
             this.VendingMachine = VendingMachineParam;
             this.Compartment = CompartmentParam;
@@ -34,7 +36,7 @@ namespace DataAccess._110_DatabaseSystem._111_Models
             set { stockOnHand = value; }
         }
 
-        public int Cost
+        public double Cost
         {
             get { return cost; }
             set { cost = value; }

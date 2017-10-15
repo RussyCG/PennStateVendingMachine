@@ -104,6 +104,16 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VendingMachineControllers\VendingMachineControllers.csproj">
+      <Project>{69da0295-3031-4759-a0b9-7ff29ce8ac26}</Project>
+      <Name>VendingMachineControllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VendingMachineModels\VendingMachineModels.csproj">
+      <Project>{98bfa32f-5f42-4f72-aaee-40b3a9be2b3e}</Project>
+      <Name>VendingMachineModels</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

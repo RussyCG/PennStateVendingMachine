@@ -8,6 +8,8 @@ namespace DataAccess._110_DatabaseSystem._111_Models
 {
     public class VendingMachine
     {
+        public static string TableName = "VendingMachine";
+
         private int iD;
         private string serialNumber;
         private Branch branch;

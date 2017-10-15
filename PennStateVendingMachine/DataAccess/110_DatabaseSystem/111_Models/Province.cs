@@ -8,6 +8,8 @@ namespace DataAccess._110_DatabaseSystem._111_Models
 {
     public class Province
     {
+        public static string TableName = "Province";
+
         private int iD;
         private string name;
 

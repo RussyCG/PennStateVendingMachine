@@ -8,6 +8,8 @@ namespace DataAccess._110_DatabaseSystem._111_Models
 {
     public class Profile
     {
+        public static string TableName = "Profile";
+
         private int iD;
         private string name;
         private List<Role> roles;

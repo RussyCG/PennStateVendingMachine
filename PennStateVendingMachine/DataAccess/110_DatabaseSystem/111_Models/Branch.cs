@@ -8,6 +8,8 @@ namespace DataAccess._110_DatabaseSystem._111_Models
 {
     public class Branch
     {
+        public static string TableName = "Branch";
+
         private int iD;
         private string name;
         private Company company;

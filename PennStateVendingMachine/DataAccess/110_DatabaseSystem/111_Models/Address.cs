@@ -8,6 +8,8 @@ namespace DataAccess._110_DatabaseSystem._111_Models
 {
     public class Address
     {
+        public static string TableName = "Address";
+
         private int iD;
         private string streetAddress;
         private Suburb suburb;

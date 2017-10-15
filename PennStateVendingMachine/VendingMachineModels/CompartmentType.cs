@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace VendingMachineModels
 {
-    public class CompartmentType
+    public class CompartmentTypeDTO
     {
         private int iD;
         private string description;
 
-        public CompartmentType()
+        public CompartmentTypeDTO()
         {
 
         }
 
-        public CompartmentType(int IDParam, string DescriptionParam)
+        public CompartmentTypeDTO(int IDParam, string DescriptionParam)
         {
             this.ID = IDParam;
             this.Description = DescriptionParam;

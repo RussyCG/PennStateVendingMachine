@@ -6,25 +6,25 @@ using System.Threading.Tasks;
 
 namespace VendingMachineModels
 {
-    public class Product
+    public class ProductDTO
     {
         private int iD;
         private string name;
-        private ProductType productType;
+        private ProductTypeDTO productType;
 
-        public Product()
+        public ProductDTO()
         {
 
         }
 
-        public Product(int IDParam, string NameParam, ProductType ProductTypeParam)
+        public ProductDTO(int IDParam, string NameParam, ProductTypeDTO ProductTypeParam)
         {
             this.ID = IDParam;
             this.Name = NameParam;
             this.ProductType = ProductTypeParam;
         }
 
-        public ProductType ProductType
+        public ProductTypeDTO ProductType
         {
             get { return productType; }
             set { productType = value; }
