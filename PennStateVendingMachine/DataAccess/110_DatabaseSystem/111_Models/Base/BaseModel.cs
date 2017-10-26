@@ -15,19 +15,19 @@ namespace DataAccess._110_DatabaseSystem._111_Models.Base
         /// </summary>
         /// <param name="ParameteredObject">Object to get the parameters from</param>
         /// <returns>Parameters for the sql statement</returns>
-        public virtual Dictionary<string, object> GetParameters(object ParameteredObject)
+        public Dictionary<string, object> GetParameters(object ParameteredObject)
         {
+            // Declare new Dictionary that will be used to store the parameter values
             Dictionary<string, object> temp = new Dictionary<string, object>();
+            // Foreach property found in the selected class
             foreach (var property in ParameteredObject.GetType().GetProperties())
             {
+                // Format the property name to be inline with parameter values for SQL
+                // Add the new property name and value to the dictionary
                 temp.Add("@" + property.Name, property.GetValue(ParameteredObject, null));
             }
+            // Return the formatted parameter values
             return temp;
-        }
-
-        Dictionary<string, object> IBaseModel.GetParameters(object ParameteredObject)
-        {
-            throw new NotImplementedException();
         }
     }
 }

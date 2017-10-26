@@ -61,7 +61,21 @@ namespace DataAccess._110_DatabaseSystem._115_EnumHelper
         {
             string temp = "view_";
 
-            // Insert switch to set view name
+            switch (TableToSelectFrom)
+            {
+                case SelectableViews.Product:
+                    break;
+                case SelectableViews.Country:
+                    return temp + "Country";
+                case SelectableViews.Role:
+                    return temp + "Role";
+                case SelectableViews.Profile:
+                    return temp + "Profile";
+                case SelectableViews.User:
+                    return temp + "User";
+                default:
+                    break;
+            }
 
             return temp;
         }

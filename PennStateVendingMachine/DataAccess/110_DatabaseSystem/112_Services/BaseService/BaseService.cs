@@ -42,19 +42,17 @@ namespace DataAccess._110_DatabaseSystem._112_Services.BaseService
         #endregion
 
         #region Constructors
-
-        public BaseService()
-        {
-
-        }
-
+        
         /// <summary>
         /// Sets the connection with the supplied ConnectionStringName
         /// </summary>
         /// <param name="ConnectionStringName">Name of the connection string to use from the .config file</param>
-        public BaseService(string ConnectionStringName)
+        public BaseService(string ConnectionStringName = "PennStateVendingMachine_dev")
         {
             connectionString = ConfigurationManager.ConnectionStrings[ConnectionStringName].ConnectionString.ToString();
+
+            connection = new SqlConnection(connectionString);
+            connection.Open();
         }
 
         #endregion
@@ -125,17 +123,24 @@ namespace DataAccess._110_DatabaseSystem._112_Services.BaseService
         /// <returns>Result set returned from the Database</returns>
         private DataTable PerformSelect(SqlCommand command)
         {
-            // Executes the command to the database
-            command.ExecuteNonQuery();
+            try
+            {
+                // Executes the command to the database
+                command.ExecuteNonQuery();
 
-            // Initialize the DataTable
-            dataTable = new DataTable();
-            // Give the SqlAdapter the value returned from the command result
-            adapter = new SqlDataAdapter(command);
-            // Fill the DataTable with the information returned
-            adapter.Fill(dataTable);
-            // Return the Filled DataTable to the calling method
-            return dataTable;
+                // Initialize the DataTable
+                dataTable = new DataTable();
+                // Give the SqlAdapter the value returned from the command result
+                adapter = new SqlDataAdapter(command);
+                // Fill the DataTable with the information returned
+                adapter.Fill(dataTable);
+                // Return the Filled DataTable to the calling method
+                return dataTable;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
         #endregion
@@ -176,7 +181,7 @@ namespace DataAccess._110_DatabaseSystem._112_Services.BaseService
         /// <returns>The initialized SqlCommand</returns>
         private SqlCommand InitializeCommand(string cmdText, bool isCommandTypeProcedure)
         {
-            SqlCommand cmd = new SqlCommand(cmdText, new SqlConnection(connectionString));
+            SqlCommand cmd = new SqlCommand(cmdText, connection);
 
             if (isCommandTypeProcedure)
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -192,7 +197,9 @@ namespace DataAccess._110_DatabaseSystem._112_Services.BaseService
                 command.Parameters.AddWithValue(parameterName, Parameters[parameterName]);
             }
 
-            return ProcedureExecutedSuccessfully(command.ExecuteNonQuery());
+            int RowsAffected = command.ExecuteNonQuery();
+            
+            return ProcedureExecutedSuccessfully(RowsAffected);
         }
 
         /// <summary>
@@ -218,7 +225,13 @@ namespace DataAccess._110_DatabaseSystem._112_Services.BaseService
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            try
+            {
+                connection.Close();
+            }
+            catch (Exception)
+            {
+            }
         }
 
         #endregion

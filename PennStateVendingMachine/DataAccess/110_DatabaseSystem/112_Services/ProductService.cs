@@ -15,7 +15,7 @@ namespace DataAccess._110_DatabaseSystem._112_Services
     {
         public ProductService() : base()
         {
-            
+            InitializeComponents();
         }
         
         private void InitializeComponents()

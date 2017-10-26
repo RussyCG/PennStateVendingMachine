@@ -12,7 +12,7 @@ namespace DataAccess._110_DatabaseSystem._113_Enums
     /// </summary>
     public enum InsertableTables
     {
-        Product
+        Product, Country, Profile
     }
 
     /// <summary>
@@ -20,7 +20,7 @@ namespace DataAccess._110_DatabaseSystem._113_Enums
     /// </summary>
     public enum DeleteableTables
     {
-        Product
+        Product, Country
     }
 
     /// <summary>
@@ -28,7 +28,7 @@ namespace DataAccess._110_DatabaseSystem._113_Enums
     /// </summary>
     public enum UpdateableTables
     {
-        Product
+        Product, Country, Profile
     }
 
     /// <summary>
@@ -36,7 +36,7 @@ namespace DataAccess._110_DatabaseSystem._113_Enums
     /// </summary>
     public enum SelectableViews
     {
-        Product
+        Product, Country, Role, Profile, User
     }
 
     public enum SelectableViewsWithParameters
