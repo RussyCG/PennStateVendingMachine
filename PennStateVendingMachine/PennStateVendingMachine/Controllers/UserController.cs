@@ -12,7 +12,7 @@ namespace PennStateVendingMachine.Controllers
     /// <summary>
     /// Responsible for all tasks relating to a user.
     /// </summary>
-    public class UserController : ApiController
+    public class UserController : ApiController, IAPIController
     {
         #region Get
 

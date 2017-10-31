@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CountryController.cs" />
+    <Compile Include="Interfaces\IController.cs" />
     <Compile Include="ProductController.cs" />
     <Compile Include="ProfileController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

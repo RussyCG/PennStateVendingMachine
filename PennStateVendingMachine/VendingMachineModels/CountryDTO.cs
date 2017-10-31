@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VendingMachineModelsv2.Interfaces;
 
 namespace VendingMachineModels
 {
-    public class CountryDTO
+    public class CountryDTO : IModelDTO
     {
         private int iD;
         private string name;

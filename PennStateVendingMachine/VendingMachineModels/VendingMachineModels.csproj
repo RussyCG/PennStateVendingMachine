@@ -48,6 +48,7 @@
     <Compile Include="CompartmentDTO.cs" />
     <Compile Include="CompartmentTypeDTO.cs" />
     <Compile Include="CountryDTO.cs" />
+    <Compile Include="Interfaces\IModelDTO.cs" />
     <Compile Include="ProductDTO.cs" />
     <Compile Include="ProductTypeDTO.cs" />
     <Compile Include="ProfileDTO.cs" />
