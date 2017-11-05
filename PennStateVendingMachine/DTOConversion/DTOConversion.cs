@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DataAccess._110_DatabaseSystem._111_Models;
-using VendingMachineModels;
+using VendingMachineModels.DTOs;
 
 namespace DTOConversion
 {

@@ -65,10 +65,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\logos\provenso-compact.ico" />
     <Content Include="packages.config" />
     <Content Include=".travis.yml" />
     <Content Include="LICENSE" />
     <Content Include="package.json" />
+    <Content Include="pages\login.html" />
     <Content Include="README.md" />
     <Content Include="scss\agency.scss" />
     <Content Include="scss\_contact.scss" />

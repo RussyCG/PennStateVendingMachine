@@ -7,8 +7,8 @@
     <ProjectGuid>{98BFA32F-5F42-4F72-AAEE-40B3A9BE2B3E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>VendingMachineModelsv2</RootNamespace>
-    <AssemblyName>VendingMachineModelsv2</AssemblyName>
+    <RootNamespace>VendingMachineModels</RootNamespace>
+    <AssemblyName>VendingMachineModels</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,28 +40,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddressDTO.cs" />
-    <Compile Include="Base\BaseModel.cs" />
-    <Compile Include="BranchDTO.cs" />
-    <Compile Include="CityDTO.cs" />
-    <Compile Include="CompanyDTO.cs" />
-    <Compile Include="CompartmentDTO.cs" />
-    <Compile Include="CompartmentTypeDTO.cs" />
-    <Compile Include="CountryDTO.cs" />
-    <Compile Include="Interfaces\IModelDTO.cs" />
-    <Compile Include="ProductDTO.cs" />
-    <Compile Include="ProductTypeDTO.cs" />
-    <Compile Include="ProfileDTO.cs" />
+    <Compile Include="Connection\VMRequest.cs" />
+    <Compile Include="DTOs\AddressDTO.cs" />
+    <Compile Include="DTOs\Base\BaseModel.cs" />
+    <Compile Include="DTOs\BranchDTO.cs" />
+    <Compile Include="DTOs\CityDTO.cs" />
+    <Compile Include="DTOs\CompanyDTO.cs" />
+    <Compile Include="DTOs\CompartmentDTO.cs" />
+    <Compile Include="DTOs\CompartmentTypeDTO.cs" />
+    <Compile Include="DTOs\CountryDTO.cs" />
+    <Compile Include="DTOs\Interfaces\IModelDTO.cs" />
+    <Compile Include="DTOs\ProductDTO.cs" />
+    <Compile Include="DTOs\ProductTypeDTO.cs" />
+    <Compile Include="DTOs\ProfileDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ProvinceDTO.cs" />
-    <Compile Include="RoleDTO.cs" />
-    <Compile Include="SuburbDTO.cs" />
-    <Compile Include="UserDTO.cs" />
-    <Compile Include="UserLogDTO.cs" />
-    <Compile Include="VendingMachineDTO.cs" />
-    <Compile Include="VendingMachineLogDTO.cs" />
-    <Compile Include="VendingMachineProductDTO.cs" />
-    <Compile Include="VendingMachinePurchaseDTO.cs" />
+    <Compile Include="DTOs\ProvinceDTO.cs" />
+    <Compile Include="DTOs\RoleDTO.cs" />
+    <Compile Include="DTOs\SessionDTO.cs" />
+    <Compile Include="DTOs\SuburbDTO.cs" />
+    <Compile Include="DTOs\UserDTO.cs" />
+    <Compile Include="DTOs\UserLogDTO.cs" />
+    <Compile Include="DTOs\VendingMachineDTO.cs" />
+    <Compile Include="DTOs\VendingMachineLogDTO.cs" />
+    <Compile Include="DTOs\VendingMachineProductDTO.cs" />
+    <Compile Include="DTOs\VendingMachinePurchaseDTO.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

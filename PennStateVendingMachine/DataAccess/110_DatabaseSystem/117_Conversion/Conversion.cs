@@ -202,6 +202,16 @@ namespace DataAccess._110_DatabaseSystem._117_Conversion
             return temp;
         }
 
+        public static List<Session> ToSessions(this DataTable TableToConvert)
+        {
+            List<Session> temp = new List<Session>();
+            foreach (DataRow row in TableToConvert.Rows)
+            {
+                temp.Add(row.ToSession());
+            }
+            return temp;
+        }
+
         #endregion
 
         #region ToModel
@@ -420,6 +430,16 @@ namespace DataAccess._110_DatabaseSystem._117_Conversion
                 DateTimePurchased = (DateTime)RowToConvert[VendingMachinePurchase.TableName + "_DateTimePurchase"],
                 Product = RowToConvert.ToProduct(),
                 VendingMachine = RowToConvert.ToVendingMachine()
+            };
+        }
+
+        public static Session ToSession(this DataRow RowToConvert)
+        {
+            return new Session()
+            {
+                ID = RowToConvert[Session.TableName + "_ID"].ToString(),
+                User = RowToConvert.ToUser(),
+                LogDateTime = (DateTime)RowToConvert[Session.TableName + "_LogDateTime"]
             };
         }
 

@@ -54,6 +54,7 @@
     <Compile Include="110_DatabaseSystem\111_Models\Profile.cs" />
     <Compile Include="110_DatabaseSystem\111_Models\Province.cs" />
     <Compile Include="110_DatabaseSystem\111_Models\Role.cs" />
+    <Compile Include="110_DatabaseSystem\111_Models\Session.cs" />
     <Compile Include="110_DatabaseSystem\111_Models\Suburb.cs" />
     <Compile Include="110_DatabaseSystem\111_Models\User.cs" />
     <Compile Include="110_DatabaseSystem\111_Models\UserLog.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="110_DatabaseSystem\112_Services\ProductService.cs" />
     <Compile Include="110_DatabaseSystem\112_Services\ProfileService.cs" />
     <Compile Include="110_DatabaseSystem\112_Services\RoleService.cs" />
+    <Compile Include="110_DatabaseSystem\112_Services\SessionService.cs" />
     <Compile Include="110_DatabaseSystem\112_Services\UserService.cs" />
     <Compile Include="110_DatabaseSystem\113_Enums\DatabaseTableEnums.cs" />
     <Compile Include="110_DatabaseSystem\114_Interfaces\Models\BaseModel\IBaseModel.cs" />

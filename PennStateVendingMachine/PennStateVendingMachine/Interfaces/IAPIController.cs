@@ -5,21 +5,22 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Http;
-using VendingMachineModels.Base;
+using VendingMachineModels.Connection;
+using VendingMachineModels.DTOs;
 
 namespace PennStateVendingMachine.Interfaces
 {
     interface IAPIController
     {
-        [HttpGet]
-        HttpResponseMessage GetAll();
-        [HttpGet]
-        HttpResponseMessage GetSingle(BaseModel model);
+        
+        //HttpResponseMessage GetAll(VMRequest requestObj, RoleDTO methodRole);
+        
+        //HttpResponseMessage GetSingle(VMRequest requestObj, RoleDTO methodRole);
         [HttpPost]
-        HttpResponseMessage RegisterNew(BaseModel model);
+        HttpResponseMessage RegisterNew(VMRequest requestObj, RoleDTO methodRole);
         [HttpPut]
-        HttpResponseMessage Update(BaseModel model);
+        HttpResponseMessage Update(VMRequest requestObj, RoleDTO methodRole);
         [HttpDelete]
-        HttpResponseMessage Delete(BaseModel model);
+        HttpResponseMessage Delete(VMRequest requestObj, RoleDTO methodRole);
     }
 }

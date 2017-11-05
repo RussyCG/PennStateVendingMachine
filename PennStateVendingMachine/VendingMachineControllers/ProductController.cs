@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using VendingMachineModels;
+using VendingMachineModels.DTOs;
 using DataAccess._110_DatabaseSystem._112_Services;
 using DTOConversion;
 

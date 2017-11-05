@@ -1,25 +1,30 @@
-﻿using System;
+﻿using PennStateVendingMachine.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using VendingMachineControllers.Interfaces;
+using VendingMachineModels.Connection;
+using VendingMachineModels.DTOs;
 
 namespace PennStateVendingMachine.Controllers
 {
-    public class CountryController : ApiController
+    public class CountryController : Base.BaseController
     {
-        [HttpGet]
-        public HttpResponseMessage Get()
+        IController controller = new VendingMachineControllers.CountryController();
+
+        public CountryController() : base()
         {
-            try
-            {
-                return Request.CreateResponse(HttpStatusCode.OK, new VendingMachineControllers.CountryController().GetAllCountries());
-            }
-            catch (Exception)
-            {
-                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, "An internal error has occured. Please contact the system admin for advice");
-            }
+            base.Controller = controller;
+        }
+
+        [HttpGet]
+        public HttpResponseMessage GetSingle(VMRequest requestObj)
+        {
+            RoleDTO role = new RoleDTO(1, "MyGet");
+            return base.GetAll(requestObj, role);
         }
     }
 }

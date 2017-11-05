@@ -73,6 +73,8 @@ namespace DataAccess._110_DatabaseSystem._115_EnumHelper
                     return temp + "Profile";
                 case SelectableViews.User:
                     return temp + "User";
+                case SelectableViews.Session:
+                    return temp + "Session";
                 default:
                     break;
             }

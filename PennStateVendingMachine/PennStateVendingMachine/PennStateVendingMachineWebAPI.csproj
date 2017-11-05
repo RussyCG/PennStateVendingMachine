@@ -81,7 +81,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
@@ -91,6 +93,7 @@
     <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Controllers\RoleController.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\VendingMachineStatisticsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -115,6 +118,10 @@
     <ProjectReference Include="..\Exceptions\Exceptions.csproj">
       <Project>{be6400db-e396-48a8-b868-cefebdc5cdd6}</Project>
       <Name>Exceptions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SecurityFramework\SecurityFramework.csproj">
+      <Project>{846769c4-1fe3-452c-b3e4-2d31bb6c2325}</Project>
+      <Name>SecurityFramework</Name>
     </ProjectReference>
     <ProjectReference Include="..\VendingMachineControllers\VendingMachineControllers.csproj">
       <Project>{69da0295-3031-4759-a0b9-7ff29ce8ac26}</Project>

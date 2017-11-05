@@ -46,6 +46,7 @@
     <Compile Include="ProfileController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RoleController.cs" />
+    <Compile Include="SessionController.cs" />
     <Compile Include="UserController.cs" />
   </ItemGroup>
   <ItemGroup>
